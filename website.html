@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="wstyle.css">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&family=Plaster" rel="stylesheet">
+
+    <link rel="icon" href="/favi/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favi/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+</head>
+
+<body onload="loadEvent()">
+    <img src="pics/loadLogo.svg" id="logoHome" onclick=" homeToggle()">
+
+    <div id="navbarContainer" class="centreY">
+        <div class="darkMode" onclick="darkModeToggle()">
+            <img src="pics/iconSettingwhite.svg" class="darkModeSetting">
+            <img src="pics/iconDarkmode.svg" class="darkModeSymbol">
+        </div>
+        <p id="copyrightText"></p>
+        <div class="navContainer">
+            <div class="navBox">
+                <div class="navButton" onclick="navToggle(0)"></div>
+                <h3 class="navText">ABOUT ME</h3>
+            </div>
+            <div class="navBox">
+                <div class="navButton" onclick="navToggle(1)"></div>
+                <h3 class="navText">EXPERIENCE</h3>
+            </div>
+            <div class="navBox">
+                <div class="navButton" onclick="navToggle(2)"></div>
+                <h3 class="navText">PROJECTS</h3>
+            </div>
+            <div class="navBox">
+                <div class="navButton" onclick="navToggle(3)"></div>
+                <h3 class="navText">SKILLS</h3>
+            </div>
+            <div class="navBox">
+                <div class="navButton" onclick="navToggle(4)"></div>
+                <h3 class="navText">CONTACT</h3>
+            </div>
+        </div>
+    </div>
+    
+
+    <section id="l0" class="l">
+        <img src="pics/loadLogo.svg" class="loadLogo centreAll">
+        
+        <div class="loadRing centreAll">
+            <div id="loadBall"></div>
+        </div>
+        
+        <h3 class="loadText centreX">- LOADING -</h3>
+    </section>
+
+    <section id="l1" class="l">
+        <img src="pics/homeProfile.png" class="profilePhoto centreAll">
+        
+        <div class="homeRing centreAll">
+            <div class="darkMode homeDarkMode" onclick="darkModeToggle()">
+                <img src="pics/iconSettingwhite.svg" class="darkModeSetting">
+                <img src="pics/iconDarkmode.svg" class="darkModeSymbol">
+            </div>
+            <div class="homeNavBox">
+                <div class="homeNavButton" onclick="navToggle(0)"></div>
+                <h3 class="homeNavText">ABOUT ME</h3>
+            </div>
+            <div class="homeNavBox">
+                <div class="homeNavButton" onclick="navToggle(1)"></div>
+                <h3 class="homeNavText">EXPERIENCE</h3>
+            </div>
+            <div class="homeNavBox">
+                <div class="homeNavButton" onclick="navToggle(2)"></div>
+                <h3 id="homeNavTextCenter">PROJECTS</h3>
+            </div>
+            <div class="homeNavBox">
+                <div class="homeNavButton" onclick="navToggle(3)"></div>
+                <h3 class="homeNavText">SKILLS</h3>
+            </div>
+            <div class="homeNavBox">
+                <div class="homeNavButton" onclick="navToggle(4)"></div>
+                <h3 class="homeNavText">CONTACT</h3>
+            </div>
+        </div>
+
+        <div class="homeTextBox centreY">
+            <h1 class="homeText">CHEN</h1>
+            <h3 class="homeSubtext">JUST A STUDENT CODER</h3>
+        </div>
+        <div class="homeTextBox centreY">
+            <h1 class="homeText purple">LING</h1>
+            <h1 class="homeText purple">SONG</h1>
+        </div>
+
+        <h3 class="homeMiniText centreX">CLICK ON THE CIRCLES TO START</h3>
+    </section>
+    
+
+    <section id="s1" class="s">
+        <img src="pics/aboutProfile.png" class="aboutPic">
+
+        <div class="aboutTextBox">
+            <h2 class="purple">ABOUT ME</h2>
+            <p style="text-align: justify;">Just as student trying to learn as much as possible. Self-taught in the field of web design and participated in many related events. Enjoy balancing creativity of design with the practicality of coding.</p>
+            <div class="aboutStatsBox">
+                <div class="aboutStatsTextBox">
+                    <h1 class="aboutStatsTitle">4</h1>
+                    <p class="aboutStatsText">Years of Experience</p>
+                </div>
+                <div class="aboutStatsTextBox">
+                    <h1 class="aboutStatsTitle">5</h1>
+                    <p class="aboutStatsText">Projects Completed</p>
+                </div>
+                <div class="aboutStatsTextBox">
+                    <h1 class="aboutStatsTitle">20</h1>
+                    <p class="aboutStatsText">Satisfied Clients</p>
+                </div>
+            </div>
+            <a href="pics/aboutResume.pdf" target="_blank">
+                <div class="aboutResume">                
+                    <h3 class="aboutResumeText centreAll">Download Resume</h3>
+                    <img src="pics/iconDownload.svg" class="aboutResumePic centreY">
+                </div>
+            </a>
+        </div>
+    </section>
+    
+
+    <section id="s2" class="s">
+        <div class="expCardBox centreY">
+            <div class="expTitleBox">
+                <h2 class="expTitle">EXPERIENCE</h2>
+                <h3 class="expSubtitle">SCROLL AND CLICK</h3>
+            </div>
+
+            <div class="expCard" onclick="expCardOpen(0)">
+                <div class="expTextBackdrop centreX">
+                    <h2 class="expTextTitle centreAll">WG<br>PS</h2>
+                    <div class="expTextBox centreX">
+                        <h2 class="expMainText">West Grove<br>Primary School</h2>
+                        <h3 class="expSubText">2011 - 2016</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expCard" onclick="expCardOpen(1)">
+                <div class="expTextBackdrop centreX">
+                    <h2 class="expTextTitle centreAll">SC<br>SS</h2>
+                    <div class="expTextBox centreX">
+                        <h2 class="expMainText">Swiss Cottage<br>Secondary School</h2>
+                        <h3 class="expSubText">2017 - 2020</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expCard" onclick="expCardOpen(2)">
+                <div class="expTextBackdrop centreX">
+                    <h2 class="expTextTitle centreAll">AC<br>JC</h2>
+                    <div class="expTextBox centreX">
+                        <h2 class="expMainText">Anglo-Chinese<br>Junior College</h2>
+                        <h3 class="expSubText">2021 - 2022</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expCard" onclick="expCardOpen(3)">
+                <div class="expTextBackdrop centreX">
+                    <h2 class="expTextTitle centreAll">NS</h2>
+                    <div class="expTextBox centreX">
+                        <h2 class="expMainText">National<br>Service</h2>
+                        <h3 class="expSubText">2023 - 2025</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expCard" onclick="expCardOpen(4)">
+                <div class="expTextBackdrop centreX">
+                    <h2 class="expTextTitle centreAll">NUS</h2>
+                    <div class="expTextBox centreX">
+                        <h2 class="expMainText">National University<br>of Singapore</h2>
+                        <h3 class="expSubText">2025 - 2029</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="expSubSection">
+        <div id="expBlur"></div>
+
+        <div class="expCardInactive centreAll">                
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">General Information</h3>
+                <p class="expCardText">
+                    Took up the position of Class Assistant Monitor from 2015 to 2016, assisting the teacher with any matters and taking charge of the class when the teacher is no around.<br><br>
+                    Subjects Taken:<br>
+                    English | Chinese | Math | Science<br><br>
+                    Score:<br>
+                    PSLE: 242
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Activities & Achievements</h3>
+                <p class="expCardText">
+                    Partook in Soccer, Taekwando and Art Club during the 6 years of primary school, improving my physical strength as well as my creativity.<br><br>
+                    Achievements:<br>
+                    Honour's Day, 3rd in Class: 2013 <br>
+                    Honour's Day, 1st in Class: 2014 <br>
+                    ICAS Science Distinction: 2016 <br>
+                    Edusave Best Progress Award: 2016
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Service</h3>
+                <p class="expCardText">
+                    Painted a picture for NUH Art Showcase in 2015, an event aimed to bring greater focus to people with disabilities.
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Testimonials</h3>
+                <p class="expCardText">
+                    -NIL-
+                </p>
+            </div>
+            
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">General Information</h3>
+                <p class="expCardText">
+                    Took up the role of Class Secretary cum Treasurer in 2019, taking care of the class budget and ensuring we have the materials needed for any class events.<br><br>
+                    Chosen to be the CCA Secretary from 2019 to 2020, taking care to attendance, providing music scores and planning of CCA events and performances.<br><br>
+                    Subjects Taken:<br>
+                    English | Chinese | Elementary Mathematics | Additional Mathematics | Chemistry | Physics | Pure Geography | Elective History | Social Studies<br><br>
+                    Score:<br>
+                    Net L1R5: 4
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Activities & Achievements</h3>
+                <p class="expCardText">
+                    Was in Chinese Orchestra from 2017 to 2020 and was the Lead Player for the Erhu 2nd section. Played the Erhu instrument and performed in many school and nation-wide events. Tutored and mentored juniors the basics of the instrument, sheet reading and tempo.<br><br>
+
+                    Achievements:<br>
+                    ICAS Science Distinction: 2017 - 2019<br>
+                    ICAS Math Distinction: 2018 - 2019<br>
+                    Education Merit Award: 2017 - 2018<br>
+                    Edusave Scholarship Award: 2019<br>
+                    EAGLES Award: 2020<br>
+                    Singapore Youth Festivals Distinction: 2019<br>
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Service</h3>
+                <p class="expCardText">
+                    Performed for the elderly at Bo Tien Day Activity Centre (2017) and SASCO Elderly Home (2018).<br><br>
+                    Created toys for prescoolers as part of our school's Eduplay Project (2018).<br><br>
+                    Went on a 5D4N trip to Hue, Vietnam as part of the VIA Horizons Trip (2018), teaching students the basics of Math, Science and English, as well as renovating the school.<br><br>
+                    Performed for Roxy Foundation, a charity event (2018 & 2019).<br><br>
+                    Coordinated a booth during Swiss Carnival (2019), a fund rasing event.
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Testimonials</h3>
+                <p class="expCardText">
+                    -NIL-
+                </p>
+            </div>
+
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">General Information</h3>
+                <p class="expCardText">
+                    Took up the Role of CCA Project Manager from 2021 to 2022, designing projects and events for the members.<br><br>
+                    Assisted the Command Team of the overseas community project in 2021 as the Logistic Head, ensuring the materials needed was curated and succesfully transported to the students in Thailand.<br><br>
+                    Volunteered to be a BuildingBloCS Core Organiser in 2022, organising a nation-wide event.<br><br>
+                    Subjects Taken:<br>
+                    H1 General Paper | H1 Chinese | H1 Project Work | H2 Mathematics | H2 Chemistry | H2 Physics | H2 Economics<br><br>
+                    Score:<br>
+                    Rank Points: 86.25
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Activities & Achievements</h3>
+                <p class="expCardText">
+                    Joined Technology Council from 2021 to 2022 and learned coding knowledge such as C++, while taking part in competitions. Emarked on individual projects such as this website. Planned and organised multiple events such as CCA camp and VIA events for members, creating a more cohesive bond between members.<br><br>
+                    Achievements:<br>
+                    Edusave Merit Award: 2021<br>
+                    Canadian Coding Competition Distinction: 2022
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Service</h3>
+                <p class="expCardText">
+                    Organised BuildingBloCS (2022), a nation-wide coding event aimed to teach students all around Singapore code and inspire them to pursue this path. Taught a workshop on the basics of C++ and hosted a Hackaton for the participants. Took care of administrative matters as the Head of Admin, ensuring smooth operation of the event.<br><br>
+                    Participated in the online Overseas Community Involvement Project (2021) to students in Chiang Mai, Thailand. Took charge of the logistics of such events, such as coordinating, sourcing and purchasing the materials needed for each students and ensuring their timely arrival to Thanland. Taught the students Science using creative and hands-on approach such as building a Periscope.
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Testimonials</h3>
+                <p class="expCardText">
+                    -NIL-
+                </p>
+            </div>
+
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">General Information</h3>
+                <p class="expCardText">
+                    Taught and trained the juniors the various methods to diagnose and to fix faults.<br><br>
+                    Involved in the planning and logistics on various conducts in the unit.<br><br>
+                    Vocation & Formation:<br>
+                    Leopard 2SG Main Battle Tank Tracked Automobile Technician<br>
+                    1st Army Maintenance Base, Maintenance and Engineering Support, Combat Service Support Command<br><br>
+                    Rank:<br>
+                    Corporal First Class
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Activities & Achievements</h3>
+                <p class="expCardText">
+                    Trained in the Ordnance Engineering School (2023), acquiring the necessary knowledge and hard skills to diagnose and fix vehicle faults.<br><br>
+                    Provided maintenance support for trainings by the Armour unit, allowing Officer Cadets, Sergeant Cadets and NSmen to complete their trainings.<br><br>
+                    Improved maintenance skills by partaking in the Armour Recovery Vehicle course (2023), learning to operate a recovery tank to remove and transport immobilised tanks.<br><br>
+                    Took part in overseas exercises such as Exercise Panzer Strike in Germany (2024), supporting training in unfamiliar conditions and with limited manpower.<br><br>
+                    Went for the Maintenance Field Training (2024), an outfield exercise aimed to strengthen soldiering skills and the basics of providing support during war-time conditions. 
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Service</h3>
+                <p class="expCardText">
+                    Created a Telegram Bot that assisted in the maintenance of the L2SG tanks. The bot keeps track of the servicing of all tanks using Google Sheets and Google Apps Script, reducing the work load of regulars. It features password protection and personalised notifications, and can be easily utilised by other vehicles types.
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Testimonials</h3>
+                <p class="expCardText">
+                    -NIL-
+                </p>
+            </div>
+
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">General Information</h3>
+                <p class="expCardText">
+                    -Coming Soon-
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Activities & Achievements</h3>
+                <p class="expCardText">
+                    -Coming Soon-
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Service</h3>
+                <p class="expCardText">
+                    -Coming Soon-
+                </p>
+            </div>
+            <div class="expCardTextBox">
+                <h3 class="expCardTitle">Testimonials</h3>
+                <p class="expCardText">
+                    -Coming Soon-
+                </p>
+            </div>
+                
+            <div class="expCardButtonContainer centreY">
+                <div class="expCardButton" onclick="expCardTexts(0)"><img src="pics/iconGeneral.svg" class="expCardButtonIcon centreAll"></div>
+                <div class="expCardButton" onclick="expCardTexts(1)"><img src="pics/iconActivities.svg" class="expCardButtonIcon centreAll"></div>
+                <div class="expCardButton" onclick="expCardTexts(2)"><img src="pics/iconService.svg" class="expCardButtonIcon centreAll"></div>
+                <div class="expCardButton" onclick="expCardTexts(3)"><img src="pics/iconTestimonials.svg" class="expCardButtonIcon centreAll"></div>
+            </div>
+
+            <div class="expCardInactivePic"></div>
+        </div>
+        
+        <img src="pics/iconCancel.svg" id="expCardClose" onclick="expCardOpen(-1)">        
+    </div>
+
+    
+    <section id="s3" class="s">
+        <div class="projectRing2 centreAll">
+            <div class="projectBall" onclick="projectSelect(0)"></div>
+            <div class="projectBall" onclick="projectSelect(1)"></div>
+        </div>
+        <div class="projectRing1 centreAll">
+            <div class="projectBall" onclick="projectSelect(2)"></div>
+            <div class="projectBall" onclick="projectSelect(3)"></div>
+            <div class="projectBall" onclick="projectSelect(4)"></div>
+        </div>
+
+        <div class="projectTextBg centreY">
+            <h2 class="projectTitle">PROJECTS</h2>
+
+            <div class="projectTextBox">
+                <h3 class="projectSubtitle">SPACE.D</h3>
+                <p class="projectText">
+                    Space.D is a venture to express daily life through art, short comics and humour.<br><br>
+                    Creativity is needed to select the aspect of life that can be drawn out to tell the story. It cannot be too long or complicated, yet has to be interesting enough to capture the audience's attention. It also needs to be relatable to the majority, improving the engagement rate of people.<br><br>
+                    While the art style may seem simplistic, it makes the creator appear more down-to-earth, increasing its relatability.
+                </p>
+            </div>
+            <div class="projectTextBox">
+                <h3 class="projectSubtitle">PROJECT NAME 4</h3>
+                <p class="projectText">
+                    -Coming Soon-
+                </p>
+            </div>
+            <div class="projectTextBox">
+                <h3 class="projectSubtitle">KEPTLER</h3>
+                <p class="projectText">
+                    Keptler is the name of the Minecraft Adventure Map maker that designs Minecraft maps for others to enjoy.<br><br>
+                    Utilised a mixture of creativity and style to design the game's look, puzzles and gameplay, along with understanding the logic behind each puzzle allows for a smooth and enjoyable experience for the players<br><br>
+                    The adventure map was created using the built in coding tools, i.e. Command Blocks, that is present in the game. Such tools utilised a fair amount of Java knowledge.
+                </p>
+            </div>
+            <div class="projectTextBox">
+                <h3 class="projectSubtitle">PROJECT NAME 3</h3>
+                <p class="projectText">
+                    -Coming Soon-
+                </p>
+            </div>
+            <div class="projectTextBox">
+                <h3 class="projectSubtitle">PROJECT NAME 5</h3>
+                <p class="projectText">
+                    -Coming Soon-
+                </p>
+            </div>
+
+            <a href="" target="_blank" id="projectNewTab"><img src="pics/iconNewtab.svg" class="projectNewTabIcon centreAll"></a>
+        </div>
+        
+        <div id="projectImg" class="centreAll"></div>
+    </section>
+    
+
+    <section id="s4" class="s">
+        <div class="skillTextBox centreAll">
+            <h3 class="skillSubtitle">HOVER TO LEARN MORE</h3>
+            <h2 class="skillTitle">SKILLS</h2>
+            <h3 class="skillSubtitle">CLICK TO LEARN EVEN MORE</h3>
+        </div>
+
+        <div class="skillContainer1 centreX">
+            <div class="skillBox" onmouseenter="skillHover(0)" onmouseleave="skillHover(-1)" onclick="skillSelect(0)">                
+                <div class="skillBoxTitleBox">
+                    <img src="pics/iconCode.svg" class="skillIcon">
+                    <h3 class="skillBoxTitle">Coding</h3>                    
+                </div>
+                <p class="skillBoxSubtitle">Proficient in multiple languages</p>
+                <p class="skillBoxText">Have the knowledge of these languages and able to grasp others quickly.</p>
+                <div class="skillEgContainer centreX">
+                    <img src="pics/skillJs.png" class="skillEg">
+                    <img src="pics/skillCpp.svg" class="skillEg">
+                </div>
+            </div>
+            <div class="skillBox" onmouseenter="skillHover(1)" onmouseleave="skillHover(-1)" onclick="skillSelect(1)">
+                <div class="skillBoxTitleBox">
+                    <img src="pics/iconMath.svg" class="skillIcon">
+                    <h3 class="skillBoxTitle">Math</h3>                    
+                </div>
+                <p class="skillBoxSubtitle">Identify the logic in the work</p>
+                <p class="skillBoxText">Able to logically solve problems that occurs with any work.</p>
+                <div class="skillEgContainer centreX"></div>
+            </div>
+            <div class="skillBox" onmouseenter="skillHover(2)" onmouseleave="skillHover(-1)" onclick="skillSelect(2)">
+                <div class="skillBoxTitleBox">
+                    <img src="pics/iconComingSoon.svg" class="skillIcon">
+                    <h3 class="skillBoxTitle">-NIL-</h3>                    
+                </div>
+                <p class="skillBoxSubtitle">-Coming Soon-</p>
+                <p class="skillBoxText">-Coming Soon-</p>
+                <div class="skillEgContainer centreX"></div>
+            </div>
+            <div class="skillBox" onmouseenter="skillHover(3)" onmouseleave="skillHover(-1)" onclick="skillSelect(3)">
+                <div class="skillBoxTitleBox">
+                    <img src="pics/iconComingSoon.svg" class="skillIcon">
+                    <h3 class="skillBoxTitle">-NIL-</h3>                    
+                </div>
+                <p class="skillBoxSubtitle">-Coming Soon-</p>
+                <p class="skillBoxText">-Coming Soon-</p>
+                <div class="skillEgContainer centreX"></div>
+            </div>
+        </div>
+
+        <div class="skillContainer2 centreX">
+            <div class="skillBox" onmouseenter="skillHover(4)" onmouseleave="skillHover(-1)" onclick="skillSelect(4)">
+                <div class="skillBoxTitleBox">
+                    <img src="pics/iconVideo.svg" class="skillIcon">
+                    <h3 class="skillBoxTitle">Editing</h3>                    
+                </div>
+                <p class="skillBoxSubtitle">Capable of editing videos</p>
+                <p class="skillBoxText"></p>
+                <div class="skillEgContainer centreX">
+                    <img src="pics/skillDaVinci.svg" class="skillEg">
+                </div>
+            </div>
+            <div class="skillBox" onmouseenter="skillHover(5)" onmouseleave="skillHover(-1)" onclick="skillSelect(5)">
+                <div class="skillBoxTitleBox">
+                    <img src="pics/iconComingSoon.svg" class="skillIcon">
+                    <h3 class="skillBoxTitle">-NIL-</h3>                    
+                </div>
+                <p class="skillBoxSubtitle">-Coming Soon-</p>
+                <p class="skillBoxText">-Coming Soon-</p>
+                <div class="skillEgContainer centreX"></div>
+            </div>           
+            <div class="skillBox" onmouseenter="skillHover(6)" onmouseleave="skillHover(-1)" onclick="skillSelect(6)">
+                <div class="skillBoxTitleBox">
+                    <img src="pics/iconDesign.svg" class="skillIcon">
+                    <h3 class="skillBoxTitle">Design</h3>                    
+                </div>
+                <p class="skillBoxSubtitle">Find and fit different styles</p>
+                <p class="skillBoxText">Able to design various styles for logos, web design and more.</p>
+                <div class="skillEgContainer centreX">
+                    <a href="pics/skillSccoLogo.png" target="_blank"><img src="pics/skillSccoLogo.png" class="skillEg"></a>
+                    <a href="pics/skillTcLogo.png" target="_blank"> <img src="pics/skillTcLogo.png" class="skillEg"></a>                   
+                </div>
+            </div>
+            <div class="skillBox" onmouseenter="skillHover(7)" onmouseleave="skillHover(-1)" onclick="skillSelect(7)">
+                <div class="skillBoxTitleBox">
+                    <img src="pics/iconComingSoon.svg" class="skillIcon">
+                    <h3 class="skillBoxTitle">-NIL-</h3>                    
+                </div>
+                <p class="skillBoxSubtitle">-Coming Soon-</p>
+                <p class="skillBoxText">-Coming Soon-</p>
+                <div class="skillEgContainer centreX"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="s5" class="s">
+        <div class="contactFormCircle contactCircle centreAll">
+            <h2 class="contactTitle centreX">CONTACT</h2>
+            <div class="contactFormContainter centreAll">
+                <input class="contactForm" id="contactFormName" placeholder="Name" name="name">
+                <input class="contactForm" id="contactFormEmail" placeholder="Email" name="email">
+                <textarea class="contactForm" id="contactFormComment" placeholder="Comments" name="comments"></textarea>
+            </div>
+            <h3 class="centreX contactFormSend" id="contactSend" onclick="submitForm()">
+                SEND
+                <img src="pics/iconSend.svg" id="contactFormSendIcon">
+            </h3>
+        </div>
+        <a href="https://www.instagram.com/" target="_blank">
+            <div class="contactInstagramCircle contactCircle">
+                <img src="pics/contactInstagram.svg" class="centreAll contactSocialIcon">
+                <h3 class="centreX contactSocialText">INSTAGRAM</h3>
+            </div>
+        </a>
+        <a href="https://github.com/" target="_blank">
+            <div class="contactGithubCircle contactCircle">
+                <img src="pics/contactGithub.svg" class="centreAll contactSocialIcon">
+                <h3 class="centreX contactSocialText">GITHUB</h3>
+            </div>
+        </a>
+        <a href="https://sg.linkedin.com/" target="_blank">
+            <div class="contactLinkedinCircle contactCircle">
+                <img src="pics/contactLinkedin.svg" class="centreAll contactSocialIcon">
+                <h3 class="centreX contactSocialText">LINKEDIN</h3>
+            </div>
+        </a>
+        <a href="mailto:someone@example.com" target="_blank">
+            <div class="contactMailCircle contactCircle">
+                <img src="pics/contactEmail.svg" class="centreAll contactSocialIcon">
+                <h3 class="centreX contactSocialText">EMAIL</h3>
+            </div>
+        </a>
+    </section>
+
+</body>
+
+<script src="web.js"></script>
+
+</html>
